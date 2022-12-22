@@ -297,12 +297,13 @@ nav ul button:hover {
     width: 50%;
     color: #d66f37;
     font-family: poppins, sans-serif;
+    display: flex;
 }
 
 .experience .numberexp .fulldiv1,
 .fulldiv2 {
-    display: flex;
-    margin: 70px 0px 0px 150px;
+    
+    margin: 70px 0px 0px 500px;
 }
 
 .experience .numberexp .fulldiv1 .div1 h1 {

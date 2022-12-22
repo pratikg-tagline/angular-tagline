@@ -61,50 +61,22 @@
              style="font-weight: bolder; font-size: 60px;">{{rightforyou}}</span><br></h1>
           </div>
 
-          <div class="divcontent divcontent2">
+          <div class="divcontent divcontent2"  *ngFor="let service of arr">
               <div class="flex">
-                  <img src={{Amd.madimg}}>
-                  <h2>{{Amd.madtitle}}</h2>
+                  <img src={{service.img}}>
+                  <h2>{{service.title}}</h2>
               </div>
-              <p>{{Amd.maddescription}}</p>
-              <a href="#">{{Amd.learnmore}}</a>
+              <p>{{service.description}}</p>
+              <a href="#">{{service.learnmore}}</a>
           </div>
 
-          <div class="divcontent divcontent3">
-              <div class="flex">
-                <img src={{Amd.madimg}}>
-                <h2>{{Amd.madtitle}}</h2>
-            </div>
-            <p>{{Amd.maddescription}}</p>
-            <a href="#">{{Amd.learnmore}}</a>
-          </div>
+         
 
-          <div class="divcontent divcontent4">
-              <div class="flex">
-                  <img src={{agiledevops.agiledevopsimg}}>
-                  <h2>{{agiledevops.agiledevopstitle}}</h2>
-              </div>
-              <p>{{agiledevops.agiledevopsdescription}}</p>
-              <a href="#">{{agiledevops.learnmore}}}</a>
-          </div>
+         
 
-          <div class="divcontent divcontent5">
-              <div class="flex">
-                  <img src={{digitaldesign.digitaldesignimg}}>
-                  <h2>{{digitaldesign.digitaldesigntitle}}</h2>
-              </div>
-              <p>{{digitaldesign.digitaldesigndescription}}.</p>
-              <a href="#">{{digitaldesign.learnmore}}</a>
-          </div>
+         
 
-          <div class="divcontent divcontent6">
-              <div class="flex">
-                  <img src={{softwarecompany.softwarwcompanyimg}}>
-                  <h2>{{softwarecompany.softwarwcompanytitle}}</h2>
-              </div>
-              <p>{{softwarecompany.softwarwcompanydescription}}</p>
-              <a href="#">{{softwarecompany.learnmore}}</a>
-          </div>
+          
 
           <div class="divcontent divcontent7">
               <h2>{{dropline1}} <span style="font-weight: bold;">{{dropline2}}</span></h2>
@@ -128,36 +100,18 @@
 
 
 
-      <div class="numberexp">
+      <div class="numberexp" >
 
-          <div class="fulldiv1">
-              <div class="div1">
-                  <img src={{professional.professionalimg}}>
-                  <h1>{{professional.professionalproject}}</h1>
-                  <h5>{{professional.professionaltital}}</h5>
+          <div class="fulldiv1" class="fulldiv2" >
+              <div class="div1" class="div2" class="div3"  class="div4" *ngFor="let servicelist of exper">
+                  <img src={{servicelist.image}}>
+                  <h1>{{servicelist.project}}</h1>
+                  <h5>{{servicelist.title}}</h5>
               </div>
-              <div class="div2">
-                  <img src={{completedproject.completedprojectimg}}>
-                  <h1>{{completedproject.completedprojectproject}}</h1>
-                  <h5>{{completedproject.completedprojecttital}}</h5>
-              </div>
+              
           </div>
-
-          <div class="fulldiv2">
-              <div class="div3">
-                  <img src={{freelancehours.freelancehoursimg}}>
-                  <h1>{{freelancehours.freelancehoursproject}}</h1>
-                  <h5>{{freelancehours.freelancehourstital}}</h5>
-              </div>
-              <div class="div4">
-                  <img src={{yearsofexperience.yearsofexperienceimg}}>
-                  <h1>{{yearsofexperience.yearsofexperienceproject}}</h1>
-                  <h5>{{yearsofexperience.yearsofexperiencetital}}</h5>
-              </div>
-          </div>
-      </div>
-  </div>
-
+    </div>
+          
 
   <!-- ____________________________________________________________________ -->
 
