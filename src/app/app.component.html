@@ -111,6 +111,7 @@
               
           </div>
     </div>
+  </div>
           
 
   <!-- ____________________________________________________________________ -->
@@ -119,16 +120,11 @@
   <span class="headerline"></span>
   <div class="row">
       <div class="menu">
-          <ul>
-              <li class="active"><a href="">{{technologies.web}}</a></li>
-              <li><a href="">{{technologies.mobile}}</a></li>
-              <li><a href="">{{technologies.desktop}}</a></li>
-              <li><a href="">{{technologies.plateform}}</a></li>
-              <li><a href="">{{technologies.database}}</a></li>
-              <li><a href="">{{technologies.bigdata}}</a></li>
-              <li><a href="">{{technologies.machinelearning}}</a></li>
-              <li><a href="">{{technologies.devops}}</a></li>
-              <li><a href="">{{technologies.clouds}}</a></li>
+          <ul  >
+            <div >
+              <li class="active" *ngFor="let technologie of technologies" ><a href="">{{technologie}}</a></li>
+             
+            </div>
           </ul>
       </div>
       <div class="language">

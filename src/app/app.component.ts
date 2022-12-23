@@ -9,30 +9,30 @@ interface Lable {
   mainlogo: string;
   button: string;
 }
-interface Amd {
-  madimg: string;
-  madtitle: string;
-  maddescription: string;
-  learnmore: string;
-}
-interface Agiledevops {
-  agiledevopsimg: string;
-  agiledevopstitle: string;
-  agiledevopsdescription: string;
-  learnmore: string;
-}
-interface Digitaldesign {
-  digitaldesignimg: string;
-  digitaldesigntitle: string;
-  digitaldesigndescription: string;
-  learnmore: string;
-}
-interface Softwarecompany {
-  softwarwcompanyimg: string;
-  softwarwcompanytitle: string;
-  softwarwcompanydescription: string;
-  learnmore: string;
-}
+// interface Amd {
+//   madimg: string;
+//   madtitle: string;
+//   maddescription: string;
+//   learnmore: string;
+// }
+// interface Agiledevops {
+//   agiledevopsimg: string;
+//   agiledevopstitle: string;
+//   agiledevopsdescription: string;
+//   learnmore: string;
+// }
+// interface Digitaldesign {
+//   digitaldesignimg: string;
+//   digitaldesigntitle: string;
+//   digitaldesigndescription: string;
+//   learnmore: string;
+// }
+// interface Softwarecompany {
+//   softwarwcompanyimg: string;
+//   softwarwcompanytitle: string;
+//   softwarwcompanydescription: string;
+//   learnmore: string;
+// }
 
 interface Experience {
   experiencetitle: string;
@@ -41,41 +41,43 @@ interface Experience {
   experienceimg: string;
 }
 
-interface Professional {
-  professionalproject: string;
-  professionaltital: string;
+// interface Professional {
+//   professionalproject: string;
+//   professionaltital: string;
 
-  professionalimg: string;
-}
-interface Completedproject {
-  completedprojectproject: string;
-  completedprojecttital: string;
+//   professionalimg: string;
+// }
+// interface Completedproject {
+//   completedprojectproject: string;
+//   completedprojecttital: string;
 
-  completedprojectimg: string;
-}
-interface Freelancehours {
-  freelancehoursproject: string;
-  freelancehourstital: string;
+//   completedprojectimg: string;
+// }
+// interface Freelancehours {
+//   freelancehoursproject: string;
+//   freelancehourstital: string;
 
-  freelancehoursimg: string;
-}
-interface Yearsofexperience {
-  yearsofexperienceproject: string;
-  yearsofexperiencetital: string;
+//   freelancehoursimg: string;
+// }
+// interface Yearsofexperience {
+//   yearsofexperienceproject: string;
+//   yearsofexperiencetital: string;
 
-  yearsofexperienceimg: string;
-}
-interface Technologies {
-  web: string;
-  mobile: string;
-  desktop: string;
-  plateform: string;
-  database: string;
-  bigdata: string;
-  machinelearning: string;
-  devops: string;
-  clouds: string;
-}
+//   yearsofexperienceimg: string;
+// }
+// interface Technologies {
+//   web: string;
+//   mobile: string;
+//   desktop: string;
+//   plateform: string;
+//   database: string;
+//   bigdata: string;
+//   machinelearning: string;
+//   devops: string;
+//   clouds: string;
+// }
+
+ 
 interface Backend {
   rubiimg: string;
   rubiheading: string;
@@ -363,17 +365,18 @@ export class AppComponent {
     },
   ];
   ourtechnologies: string = 'Our Technologies';
-  technologies: Technologies = {
-    web: 'Web',
-    mobile: 'Mobile',
-    desktop: 'Desktop',
-    plateform: 'Plateform',
-    database: 'DetaBase',
-    bigdata: 'BigData',
-    machinelearning: 'MachineLearning',
-    devops: 'DevOps',
-    clouds: 'Clouds',
-  };
+  // technologies: Technologies = {
+  //   web: 'Web',
+  //   mobile: 'Mobile',
+  //   desktop: 'Desktop',
+  //   plateform: 'Plateform',
+  //   database: 'DetaBase',
+  //   bigdata: 'BigData',
+  //   machinelearning: 'MachineLearning',
+  //   devops: 'DevOps',
+  //   clouds: 'Clouds',
+  // };
+  technologies:string[]=['web','mobile','desktop','plateform','database','bigdata','machinelarning','devops','clouds']
   web: string = 'Web';
   backend: Backend = {
     rubiimg: '../assets/../assets/images/ror.png',
