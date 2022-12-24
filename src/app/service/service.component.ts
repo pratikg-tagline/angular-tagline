@@ -14,6 +14,7 @@ interface OurServices{
 })
 export class ServiceComponent implements OnInit {
 @Input() inputData:any
+@Input() project:any
   constructor() { }
 
   ngOnInit(): void {

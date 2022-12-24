@@ -338,7 +338,7 @@ export class AppComponent {
     button: 'button',
     experienceimg: '../assets/../assets/images/woman.webp',
   };
-  exper: Experiences[] = [
+  exper=[
     {
       project: '125+',
       title: 'Professional',

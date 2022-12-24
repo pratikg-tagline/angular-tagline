@@ -90,9 +90,9 @@
     
 
   <!-- ___________________________________________________________ -->
-  <div class="experience">
+  <!-- <div class="experience"> -->
 
-      <div class="contentexp">
+      <!-- <div class="contentexp">
           <h2>{{experience.experiencetitle}}</h2>
           <p>{{experience.experiencedescription}}</p>
           <button>Contact Us</button>
@@ -100,11 +100,11 @@
 
       <span>
           <img src={{experience.experienceimg}} height="490">
-      </span>
+      </span> -->
 
 
-
-      <div class="numberexp" >
+      <app-experience [project]="exper"></app-experience>
+      <!-- <div class="numberexp" >
 
           <div class="fulldiv1" class="fulldiv2" >
               <div class="div1" class="div2" class="div3"  class="div4" *ngFor="let servicelist of exper">
@@ -114,9 +114,9 @@
               </div>
               
           </div>
-    </div>
-  </div>
-          
+    </div> -->
+  <!-- </div> -->
+  
 
   <!-- ____________________________________________________________________ -->
 
