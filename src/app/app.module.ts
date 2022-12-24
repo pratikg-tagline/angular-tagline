@@ -8,6 +8,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { BackendComponent } from './backend/backend.component';
 import { FrontendComponent } from './frontend/frontend.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { WhyTeglineComponent } from './why-tegline/why-tegline.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TechnologyComponent } from './technology/technology.component';
     ExperienceComponent,
     BackendComponent,
     FrontendComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    WhyTeglineComponent
   ],
   imports: [
     BrowserModule,
