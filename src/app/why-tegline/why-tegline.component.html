@@ -1,12 +1,12 @@
 <div class="empowers">
-  <div class="empowerbox"*ngFor="let progressive of infotech">
+  <div class="empowerbox" *ngFor="let progressive of infotech">
     <div class="imgnumflex" >
       <img src="{{ progressive.img }}" />
-      <h1>{{ progressive.title }}</h1>
+      <h1>{{ progressive.heading }}</h1>
       <!-- <h2>{{progressive.heading}}</h2>
           <p>{{progressive.description}}</p>  -->
     </div>
-    <h2>{{ progressive.heading }}</h2>
+    <h2>{{ progressive.title }}</h2>
     <p>{{ progressive.description }}</p>
   </div>
 </div>

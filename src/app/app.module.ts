@@ -9,6 +9,7 @@ import { BackendComponent } from './backend/backend.component';
 import { FrontendComponent } from './frontend/frontend.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { WhyTeglineComponent } from './why-tegline/why-tegline.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WhyTeglineComponent } from './why-tegline/why-tegline.component';
     BackendComponent,
     FrontendComponent,
     TechnologyComponent,
-    WhyTeglineComponent
+    WhyTeglineComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,

@@ -77,7 +77,6 @@ interface Experience {
 //   clouds: string;
 // }
 
- 
 interface Backend {
   rubiimg: string;
   rubiheading: string;
@@ -290,7 +289,7 @@ export class AppComponent {
   rightforyou: string = 'rightforyou';
   Findthe: string = 'Findthe';
 
-  users= [
+  users = [
     {
       img: '../assets/../assets/images/web-design-icon.webp',
       title: 'Software Product Engineering',
@@ -338,7 +337,7 @@ export class AppComponent {
     button: 'button',
     experienceimg: '../assets/../assets/images/woman.webp',
   };
-  exper=[
+  exper = [
     {
       project: '125+',
       title: 'Professional',
@@ -376,120 +375,171 @@ export class AppComponent {
   //   devops: 'DevOps',
   //   clouds: 'Clouds',
   // };
-  technologies:string[]=['web','mobile','desktop','plateform','database','bigdata','machinelarning','devops','clouds']
+  technologies: string[] = [
+    'web',
+    'mobile',
+    'desktop',
+    'plateform',
+    'database',
+    'bigdata',
+    'machinelarning',
+    'devops',
+    'clouds',
+  ];
   web: string = 'Web';
-  language=[
+  language = [
     {
-    img: '../assets/../assets/images/ror.png',
-    heading: 'Ruby on Rails'
-  },
+      img: '../assets/../assets/images/ror.png',
+      heading: 'Ruby on Rails',
+    },
     {
-    img: '../assets/../assets/images/python.png',
-    heading: 'Python'},{
-    img: '../assets/../assets/images/node_js.svg',
-    heading: 'Node Js'},{
-  img: '../assets/../assets/images/php.png',
-  heading: 'PHP'},{
-    img: '../assets/../assets/images/android-java.png',
-  heading: 'Java'},{
-    img: '../assets/../assets/images/go.png',
-  heading: 'Go Language'}
+      img: '../assets/../assets/images/python.png',
+      heading: 'Python',
+    },
+    {
+      img: '../assets/../assets/images/node_js.svg',
+      heading: 'Node Js',
+    },
+    {
+      img: '../assets/../assets/images/php.png',
+      heading: 'PHP',
+    },
+    {
+      img: '../assets/../assets/images/android-java.png',
+      heading: 'Java',
+    },
+    {
+      img: '../assets/../assets/images/go.png',
+      heading: 'Go Language',
+    },
   ];
   backendname: string = 'Back End';
-  frontend =[
-   {
-    img: '../assets/../assets/images/react-js.png',
-    heading: 'React Js'}
-    ,{
-    img: '../assets/../assets/images/angular-icon.png',
-    heading: 'Angular'},{
-    img: '../assets/../assets/images/typescript-icon.png',
-    heading: 'Typescript'},{
-    img: '../assets/../assets/images/vue-js.png',
-  heading: 'Vue Js'},{
-    img: '../assets/../assets/images/meter-js.png',
-    heading: 'Mateor Js'},{
- img: '../assets/../assets/images/javascript-icon.png',
-    heading: 'Java Script'},{
-   img: '../assets/../assets/images/html5.png',
-    heading: 'HTML 5',}
-    ];
-  whytegline = [{
-    // teglinetitle: 'Why Choose Tagline Infotech ?',
-    // teglinedescription:
-    //   'We have a team of developers who use their expertise to provide complete web development,mobile app development,testing & assurance, SaaS development, and designing services. Tagline Infotech has a team of developers thatyou can hiby mentioning the requirements for your project. Save time and money by hiring our developers foryour startup or large-scale company. Our team of developers has the experience to understand the business ideasof the clients to provide solutions that focus on the core values of the business. Here you will find somebenefits of hiring developers from us.',
-    img: '../assets/../assets/images/choose-roadmap.png',
-    title: 'Progressive Roadmap',
-    heading: '01',
-    description:
-      'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal andmajor steps to reach that goal. We have a team of developers that uses progressive',
-  },{
+  frontend = [
+    {
+      img: '../assets/../assets/images/react-js.png',
+      heading: 'React Js',
+    },
+    {
+      img: '../assets/../assets/images/angular-icon.png',
+      heading: 'Angular',
+    },
+    {
+      img: '../assets/../assets/images/typescript-icon.png',
+      heading: 'Typescript',
+    },
+    {
+      img: '../assets/../assets/images/vue-js.png',
+      heading: 'Vue Js',
+    },
+    {
+      img: '../assets/../assets/images/meter-js.png',
+      heading: 'Mateor Js',
+    },
+    {
+      img: '../assets/../assets/images/javascript-icon.png',
+      heading: 'Java Script',
+    },
+    {
+      img: '../assets/../assets/images/html5.png',
+      heading: 'HTML 5',
+    },
+  ];
+  whytegline = [
+    {
+      // teglinetitle: 'Why Choose Tagline Infotech ?',
+      // teglinedescription:
+      //   'We have a team of developers who use their expertise to provide complete web development,mobile app development,testing & assurance, SaaS development, and designing services. Tagline Infotech has a team of developers thatyou can hiby mentioning the requirements for your project. Save time and money by hiring our developers foryour startup or large-scale company. Our team of developers has the experience to understand the business ideasof the clients to provide solutions that focus on the core values of the business. Here you will find somebenefits of hiring developers from us.',
+      img: '../assets/../assets/images/choose-roadmap.png',
+      title: 'Progressive Roadmap',
+      heading: '01',
+      description:
+        'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal andmajor steps to reach that goal. We have a team of developers that uses progressive',
+    },
+    {
       img: '../assets/../assets/images/choose-project.png',
-    title: 'Efficient Project Management',
-    heading: '02',
-    description:
-      'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently',
-  },{
-    img: '../assets/../assets/images/choose-flexible.svg',
-    title: 'Flexible Engagement Model',
-    heading: '03',
-    description:
-      'We provide flexible engagement models so that clients can hire developers for their projects. Theseengagement models are flexible so if you aren’t satisfied with any model you can switch to another.',
-  },{
+      title: 'Efficient Project Management',
+      heading: '02',
+      description:
+        'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently',
+    },
+    {
+      img: '../assets/../assets/images/choose-flexible.svg',
+      title: 'Flexible Engagement Model',
+      heading: '03',
+      description:
+        'We provide flexible engagement models so that clients can hire developers for their projects. Theseengagement models are flexible so if you aren’t satisfied with any model you can switch to another.',
+    },
+    {
       img: '../assets/images/choose-cost.png',
-    title: 'Cost-Effective',
-    heading: '04',
-    description:
-      'Our team of developers provides the best development services at affordable prices. We believe thathigh-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring',
-  },{
+      title: 'Cost-Effective',
+      heading: '04',
+      description:
+        'Our team of developers provides the best development services at affordable prices. We believe thathigh-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring',
+    },
+    {
       img: '../assets/images/choose-delivery.png',
-    title: 'Consistent Delivery',
-    heading: '05',
-    description:
-      'Our developers follow an agile approach to deliver the project before the deadline. We are providingconsistent delivery of fully-featured projects as per the client’s requirements.',
-   }] 
+      title: 'Consistent Delivery',
+      heading: '05',
+      description:
+        'Our developers follow an agile approach to deliver the project before the deadline. We are providingconsistent delivery of fully-featured projects as per the client’s requirements.',
+    },
+  ];
   //  empower: 'Empower',
   //   your: 'Your ',
   //   business: 'Business',
   //   withdedicateddevelopers: 'with Dedicated Developers',
   //   button: 'Talk to our Expert',
   // };
-  clientele: Clientele = {
-    clienteletitle: 'Words From Our Clientele',
-    clienteledescription1:
-      'Good things come for those who work hard, and thats why our clientele appreciate our efforts. Tagline Infotech provides the best services to its clients, and it is reflected through our ratings and reviewson various platforms.',
-    clienteledescription2:
-      'We are a well-known IT services company on Clutch. Check out what our customers have to say about ourservices. Read their ratings, feedback, and stories about partnering with us before making your own decision.',
-    clienteleheading1: '5.0',
-    clienteledesc1: 'Everything always turns out perfectly done.',
-    clienteledes1: 'IT & Computer Scientist, Self-Employed',
-    clientelereview1: 'Verified Review',
-    clienteleheading2: '5.0',
-    clienteledesc2:
-      'They understand complex technical requirements, and they have a team that quickly gets up to speed.',
-    clienteledes2: 'Founder, Cimpro.io',
-    clientelereview2: 'Verified Review',
-    clienteleheading3: '5.0',
-    clienteledesc3:
-      '…theyre able to tackle pretty much everything you throw at them.',
-    clienteledes3: 'CEO, Promoprep',
-    clientelereview3: 'Verified Review',
-    clienteleheading4: '5.0',
-    clienteledesc4:
-      'When things go wrong, they were good at adapting and problem solving on the fly.',
-    clienteledes4: 'CEO, SupplementSnoop',
-    clientelereview4: 'Verified Review',
-    clienteleheading5: '5.0',
-    clienteledesc5:
-      'The team takes up new challenges and finishes the project on time.',
-    clienteledes5: 'Software Architect, Specialty Finance Company',
-    clientelereview5: 'Verified Review',
-    clienteleheading6: '5.0',
-    clienteledesc6:
-      'We are getting close to launch now and its been a tremendous help to have their developers on my team.',
-    clienteledes6: 'Owner, e-Commerce Support Company',
-    clientelereview6: 'Verified Review',
-  };
+  // wordsclient={
+  //   title: 'Words From Our Clientele',
+  //     description1:
+  //       'Good things come for those who work hard, and thats why our clientele appreciate our efforts. Tagline Infotech provides the best services to its clients, and it is reflected through our ratings and reviewson various platforms.',
+  //    description2:
+  //      'We are'
+  // }
+  clientele = [
+    {
+      // clienteletitle: 'Words From Our Clientele',
+      // clienteledescription1:
+      //   'Good things come for those who work hard, and thats why our clientele appreciate our efforts. Tagline Infotech provides the best services to its clients, and it is reflected through our ratings and reviewson various platforms.',
+      // clienteledescription2:
+      // 'We are a well-known IT services company on Clutch. Check out what our customers have to say about ourservices. Read their ratings, feedback, and stories about partnering with us before making your own decision.',
+      heading: '5.0',
+      desc: 'Everything always turns out perfectly done.',
+      des: 'IT & Computer Scientist, Self-Employed',
+      review: 'Verified Review',
+    },
+    {
+      heading: '5.0',
+      desc: 'They understand complex technical requirements, and they have a team that quickly gets up to speed.',
+      des: 'Founder, Cimpro.io',
+      review: 'Verified Review',
+    },
+    {
+      heading: '5.0',
+      desc: '…theyre able to tackle pretty much everything you throw at them.',
+      des: 'CEO, Promoprep',
+      review: 'Verified Review',
+    },
+    {
+      heading: '5.0',
+      desc: 'When things go wrong, they were good at adapting and problem solving on the fly.',
+      des: 'CEO, SupplementSnoop',
+      review: 'Verified Review',
+    },
+    {
+      heading: '5.0',
+      desc: 'The team takes up new challenges and finishes the project on time.',
+      des: 'Software Architect, Specialty Finance Company',
+      review: 'Verified Review',
+    },
+    {
+      heading: '5.0',
+      desc: 'We are getting close to launch now and its been a tremendous help to have their developers on my team.',
+      des: 'Owner, e-Commerce Support Company',
+      review: 'Verified Review',
+    },
+  ];
   awards: Awards = {
     awardstitle1: 'Awards &',
     awardstitle2: ' Recognitions',
