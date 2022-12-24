@@ -550,30 +550,30 @@ export class AppComponent {
     awardsimg5: '../assets/images/award-6.webp',
   };
   mainblogsname: string = 'Our Global Presence';
-  ourblogs: Ourblogs = {
-    blogshadding: 'Our Blogs',
-    pythonimg: '../assets/images/Python-vs-Java.png',
-    pythonbtn: 'Python',
-    pythondate: '15/12/22',
-    pythontitle: 'Python vs Java Comparison Of',
-    pythondescription:
+  ourblogs = [{
+    
+    img: '../assets/images/Python-vs-Java.png',
+    btn: 'Python',
+    date: '15/12/22',
+    title: 'Python vs Java Comparison Of',
+    description:
       'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
-    pythonread: 'Read More ->',
-    nodejsimg: '../assets/images/Node.js-Application.png',
-    nodejsbtn: 'Node Js',
-    nodejsdate: '9/12/22',
-    nodejstitle: 'Best Practices for Node.js Application Development:...',
-    nodejsdescription:
+    read: 'Read More ->'},{
+    img: '../assets/images/Node.js-Application.png',
+    btn: 'Node Js',
+    date: '9/12/22',
+    title: 'Best Practices for Node.js Application Development:...',
+    description:
       'Quick Summary Want to know about node js architecture and node js architecture best',
-    nodejsread: 'Read More ->',
-    rorimg: '../assets/images/Kotlin-vs-Java.png',
-    rorbtn: 'RoR',
-    rordate: '9/12/22',
-    rortitle: 'JavaScript vs Ruby On Rails: What...',
-    rordescription:
+    read: 'Read More ->',},{
+img: '../assets/images/Kotlin-vs-Java.png',
+btn: 'RoR',
+date: '9/12/22',
+title: 'JavaScript vs Ruby On Rails: What...',
+description:
       'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
-    rorread: 'Read More ->',
-  };
+read: 'Read More ->',
+  }];
   globalpresence: Globalpresence = {
     firstheading: 'India (HQ)',
     firstdescription:

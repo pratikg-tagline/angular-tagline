@@ -10,6 +10,7 @@ import { FrontendComponent } from './frontend/frontend.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { WhyTeglineComponent } from './why-tegline/why-tegline.component';
 import { ReviewComponent } from './review/review.component';
+import { OurblogsComponent } from './ourblogs/ourblogs.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReviewComponent } from './review/review.component';
     FrontendComponent,
     TechnologyComponent,
     WhyTeglineComponent,
-    ReviewComponent
+    ReviewComponent,
+    OurblogsComponent
   ],
   imports: [
     BrowserModule,
