@@ -11,6 +11,7 @@ import { TechnologyComponent } from './technology/technology.component';
 import { WhyTeglineComponent } from './why-tegline/why-tegline.component';
 import { ReviewComponent } from './review/review.component';
 import { OurblogsComponent } from './ourblogs/ourblogs.component';
+import { OurglobalComponent } from './ourglobal/ourglobal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OurblogsComponent } from './ourblogs/ourblogs.component';
     TechnologyComponent,
     WhyTeglineComponent,
     ReviewComponent,
-    OurblogsComponent
+    OurblogsComponent,
+    OurglobalComponent
   ],
   imports: [
     BrowserModule,

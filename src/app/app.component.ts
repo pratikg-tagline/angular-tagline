@@ -574,19 +574,21 @@ description:
       'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
 read: 'Read More ->',
   }];
-  globalpresence: Globalpresence = {
-    firstheading: 'India (HQ)',
-    firstdescription:
+  globalpresence = [{
+    heading: 'India (HQ)',
+    description:
       'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat,Gujarat 394101',
-    firstnum: ' +91 9913 808 285',
-    secondheading: 'U.S.A',
-    seconddescription: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
-    secondnum: '+1 (404) 483-3388',
-    thirdheading: 'United Kingdom',
-    thirddescription: '65 Byron road North wembley Middlesex, london HA0 3PB',
-    thirdnum: '+44 78240 75400',
-    read: 'solutions@taglineinfotech.com',
-  };
+    num: ' +91 9913 808 285'}
+    ,{
+    heading: 'U.S.A',
+    description: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
+    num: '+1 (404) 483-3388',}
+    ,{
+   heading: 'United Kingdom',
+    description: '65 Byron road North wembley Middlesex, london HA0 3PB',
+    num: '+44 78240 75400',
+    //read: 'solutions@taglineinfotech.com',
+  }];
   forms: Forms = {
     formsheading: 'Get Your Free Quote Today',
     formbtn: 'Send Message',

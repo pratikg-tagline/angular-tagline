@@ -1,0 +1,15 @@
+
+<div class="contactus">
+    <div class="formdetail" *ngFor="let inputdata of ourglobal" >
+        <div class="address" >
+            <div class="place">
+                <h6>{{inputdata.heading}}</h6>
+                <p class="add-city">{{inputdata.description}}</p>
+                 <a href="tel:+91 99138 08285" class="contact mobile-no"><i
+                        class="bi bi-telephone-fill"></i>{{inputdata.num}} </a> 
+            </div>
+           
+
+        </div>
+    </div>
+</div>

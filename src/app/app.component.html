@@ -463,46 +463,23 @@
 
   <div class="contactus">
       <div class="formdetail">
+        
           <div class="address">
-
-              <h4>{{mainblogsname}}</h4>
-
-              <div class="place">
-                  <h6>{{globalpresence.firstheading}}</h6>
-                  <p class="add-city">{{globalpresence.firstdescription}}</p>
-                  <a href="tel:+91 99138 08285" class="contact mobile-no"><i
-                          class="bi bi-telephone-fill"></i>{{globalpresence.firstnum}} </a>
-              </div>
-
-              <div class="place">
-                  <h6>{{globalpresence.secondheading}}</h6>
-                  <p class="add-city">{{globalpresence.seconddescription}}</p>
-                  <a href="tel: +1 (404) 483-3388" class="contact mobile-no"><i
-                          class="bi bi-telephone-fill"></i>{{globalpresence.secondnum}}</a>
-              </div>
-
-              <div class="place">
-                  <h6>{{globalpresence.thirdheading}}</h6>
-                  <p class="add-city">{{globalpresence.thirddescription}}</p>
-                  <a href="tel:+44 78240 75400" class="contact mobile-no"><i
-                          class="bi bi-telephone-fill"></i>{{globalpresence.thirdnum}}}</a>
-              </div>
-
-              <div class="place">
-                  <a href="mailto:solutions@taglineinfotech.com" class="mail"><i
-                          class="bi bi-envelope-fill"></i>{{globalpresence.read}}</a>
-              </div>
+     
+              <!-- <h4>{{mainblogsname}}</h4> -->
+             
 
           </div>
       </div>
-      <div class="forms">
+      <app-ourglobal [ourglobal]=" globalpresence"></app-ourglobal>
+      <!-- <div class="forms">
           <h1>{{forms.formsheading}}</h1>
           <input type="text" placeholder="Full Name"><br>
           <input type="text" placeholder="Phone"><br>
           <input type="email" placeholder="Email"><br>
           <textarea placeholder="Message" rows="3"></textarea><br>
           <button>{{forms.formbtn}}</button>
-      </div>
+      </div> -->
   </div>
 
   <!-- ____________________________________________________________________ -->
