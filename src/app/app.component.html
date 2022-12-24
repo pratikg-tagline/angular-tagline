@@ -51,24 +51,32 @@
   <!-- ___________________________________________________________ -->
 
 
-  <div class="services">
-      <h1>{{OurServices}}</h1>
-      <span class="headerline"></span>
-
-      <div class="boxes">
-          <div class="divcontent divcontent1" style="border: none;">
+  <app-service [inputData]="users"></app-service>
+       
+           <!-- <div >
               <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{Findthe}}<br><span
              style="font-weight: bolder; font-size: 60px;">{{rightforyou}}</span><br></h1>
           </div>
-
-          <div class="divcontent divcontent2"  *ngFor="let service of arr">
+          <div class="divcontent divcontent2 ">
+            <div class="flex">
+              <app-service [inputData]="users"></app-service>
+            </div>
+          </div>  -->
+        <!-- <div class="boxes">
+            <div class="divcontent" style="border: none;">
+                <div class="flex">
+                    <app-service [inputData]="users"></app-service>
+                </div>        
+            </div>
+        </div> -->
+           <!-- <div class="divcontent divcontent2"  *ngFor="let service of users">
               <div class="flex">
                   <img src={{service.img}}>
                   <h2>{{service.title}}</h2>
               </div>
               <p>{{service.description}}</p>
               <a href="#">{{service.learnmore}}</a>
-          </div>
+          </div>  -->
 
          
 
@@ -76,14 +84,10 @@
 
          
 
-          
-
-          <div class="divcontent divcontent7">
-              <h2>{{dropline1}} <span style="font-weight: bold;">{{dropline2}}</span></h2>
-              <button>{{contactus}}</button>
-          </div>
-      </div>
-  </div>
+      
+      
+        
+    
 
   <!-- ___________________________________________________________ -->
   <div class="experience">

@@ -1,0 +1,23 @@
+<!-- <div *ngFor="let data of inputData">
+    {{data.img}}
+    {{data.title}}
+    {{data. description}}
+    {{data.learnmore}}
+</div> -->
+<div class="services">
+   
+    <span class="headerline"></span>
+
+     <div class="boxes" >
+      <div class="divcontent divcontent2"  *ngFor="let service of inputData">
+          <div class="flex">
+              <img src={{service.img}}>
+              <h3>{{service.title}}</h3>
+          </div>
+          <p>{{service.description}}</p>
+          <a href="#">{{service.learnmore}}</a>
+
+      </div> 
+     
+    </div>
+</div>

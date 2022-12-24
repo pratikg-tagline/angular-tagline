@@ -290,7 +290,7 @@ export class AppComponent {
   rightforyou: string = 'rightforyou';
   Findthe: string = 'Findthe';
 
-  arr: myarraytype[] = [
+  users= [
     {
       img: '../assets/../assets/images/web-design-icon.webp',
       title: 'Software Product Engineering',
