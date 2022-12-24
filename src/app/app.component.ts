@@ -378,37 +378,42 @@ export class AppComponent {
   // };
   technologies:string[]=['web','mobile','desktop','plateform','database','bigdata','machinelarning','devops','clouds']
   web: string = 'Web';
-  backend: Backend = {
-    rubiimg: '../assets/../assets/images/ror.png',
-    rubiheading: 'Ruby on Rails',
-    pythonimg: '../assets/../assets/images/python.png',
-    pythonheading: 'Python',
-    nodeimg: '../assets/../assets/images/node_js.svg',
-    nodeheading: 'Node Js',
-    phpimg: '../assets/../assets/images/php.png',
-    phpheading: 'PHP',
-    javaimg: '../assets/../assets/images/android-java.png',
-    javaheading: 'Java',
-    golanguageimg: '../assets/../assets/images/go.png',
-    golanguageheading: 'Go Language',
-  };
+  language=[
+    {
+    img: '../assets/../assets/images/ror.png',
+    heading: 'Ruby on Rails'
+  },
+    {
+    img: '../assets/../assets/images/python.png',
+    heading: 'Python'},{
+    img: '../assets/../assets/images/node_js.svg',
+    heading: 'Node Js'},{
+  img: '../assets/../assets/images/php.png',
+  heading: 'PHP'},{
+    img: '../assets/../assets/images/android-java.png',
+  heading: 'Java'},{
+    img: '../assets/../assets/images/go.png',
+  heading: 'Go Language'}
+  ];
   backendname: string = 'Back End';
-  frontend: Frontend = {
-    reactimg: '../assets/../assets/images/react-js.png',
-    reactheading: 'React Js',
-    angularimg: '../assets/../assets/images/angular-icon.png',
-    angularheading: 'Angular',
-    typescriptimg: '../assets/../assets/images/typescript-icon.png',
-    typescriptheading: 'Typescript',
-    vuejsimg: '../assets/../assets/images/vue-js.png',
-    vuejsheading: 'Vue Js',
-    mateotjsimg: '../assets/../assets/images/meter-js.png',
-    mateotjsheading: 'Mateor Js',
-    javascriptimg: '../assets/../assets/images/javascript-icon.png',
-    javascriptheading: 'Java Script',
-    htmlimg: '../assets/../assets/images/html5.png',
-    htmlheading: 'HTML 5',
-  };
+  frontend =[
+   {
+    img: '../assets/../assets/images/react-js.png',
+    heading: 'React Js'}
+    ,{
+    img: '../assets/../assets/images/angular-icon.png',
+    heading: 'Angular'},{
+    img: '../assets/../assets/images/typescript-icon.png',
+    heading: 'Typescript'},{
+    img: '../assets/../assets/images/vue-js.png',
+  heading: 'Vue Js'},{
+    img: '../assets/../assets/images/meter-js.png',
+    heading: 'Mateor Js'},{
+ img: '../assets/../assets/images/javascript-icon.png',
+    heading: 'Java Script'},{
+   img: '../assets/../assets/images/html5.png',
+    heading: 'HTML 5',}
+    ];
   whytegline: Whytegline = {
     teglinetitle: 'Why Choose Tagline Infotech ?',
     teglinedescription:

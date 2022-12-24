@@ -126,8 +126,9 @@
       <div class="menu">
           <ul  >
             <div >
-              <li class="active" *ngFor="let technologie of technologies" ><a href="">{{technologie}}</a></li>
-             
+                <app-technology [ourtechnology]=" technologies"></app-technology>
+              <!-- <li class="active" *ngFor="let technologie of technologies" ><a href="">{{technologie}}</a></li>
+              -->
             </div>
           </ul>
       </div>
@@ -136,8 +137,8 @@
               <h1>{{web}}</h1>
               <h2 style="margin-top: 20px;font-weight: 400;">{{backendname}}</h2>
               <div class="backend">
-
-                  <div class="ror">
+                 <app-backend [backend]="language"></app-backend>
+                  <!-- <div class="ror">
                       <img src={{backend.rubiimg}}>
                       <h3>{{backend.rubiheading}}</h3>
                   </div>
@@ -160,13 +161,14 @@
                   <div class="go">
                       <img src={{backend.golanguageimg}}>
                       <h3>{{backend.golanguageheading}}</h3>
-                  </div>
+                  </div> -->
 
               </div>
 
               <h2>Front End</h2>
               <div class="frontend">
-                  <div class="react">
+                <app-frontend [flang]="frontend"></app-frontend>
+                  <!-- <div class="react">
                       <img src={{frontend.reactimg}}>
                       <h3>{{frontend.reactheading}}</h3>
                   </div>
@@ -193,7 +195,7 @@
                   <div class="html">
                       <img src={{frontend.htmlimg}}>
                       <h3>{{frontend.htmlheading}}</h3>
-                  </div>
+                  </div> -->
               </div>
           </div>
       </div>

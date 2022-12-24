@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceComponent } from './service/service.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { BackendComponent } from './backend/backend.component';
+import { FrontendComponent } from './frontend/frontend.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServiceComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    BackendComponent,
+    FrontendComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,
