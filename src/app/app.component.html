@@ -421,8 +421,10 @@
   <!-- ____________________________________________________________________ -->
 
   <div class="blogs">
-      <h1>{{ourblogs.blogshadding}}</h1>
-      <span class="headerline"></span>
+      <!-- <h1>{{ourblogs.blogshadding}}</h1> -->
+      <app-ourblogs [blogs]="ourblogs"></app-ourblogs>
+  </div>
+      <!-- <span class="headerline"></span>
       <div class="bloggers">
           <div class="blog">
               <img src={{ourblogs.pythonimg}}>
@@ -455,7 +457,7 @@
               <a href="#">{{ourblogs.rorread}}</a>
           </div>
       </div>
-  </div>
+  </div> -->
 
   <!-- ____________________________________________________________________ -->
 
