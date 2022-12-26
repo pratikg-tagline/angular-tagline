@@ -1,11 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Experience } from '../common';
 
 
-interface Experience {
- project:string;
- title:string;
- image:string
-}
+
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',

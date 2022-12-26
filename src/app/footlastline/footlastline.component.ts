@@ -1,11 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Lastline } from '../common';
 
-interface Lastline{
-  footerfollow: string;
-  footer2022: string;
-  footerreserved: string;
-  footercompanyname: string;
-}
+
 @Component({
   selector: 'app-footlastline',
   templateUrl: './footlastline.component.html',

@@ -1,14 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Developer } from '../common';
 
-interface Developer{
-  footerhiredevelopers: string;
-  footerpython: string;
-  footerangular: string;
-  footerror: string;
-  footerflutter: string;
-  footerreact: string;
-  footerreactnative: string;
-}
+
 @Component({
   selector: 'app-foothiredevlopers',
   templateUrl: './foothiredevlopers.component.html',

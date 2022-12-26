@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./technology.component.scss']
 })
 export class TechnologyComponent implements OnInit {
-@Input() ourtechnology:any;
+@Input() ourtechnology:string[]=[];
   constructor() { }
 
   ngOnInit(): void {

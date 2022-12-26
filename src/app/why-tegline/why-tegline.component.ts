@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Whytegline } from '../common';
+
 
 @Component({
   selector: 'app-why-tegline',
@@ -6,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./why-tegline.component.scss']
 })
 export class WhyTeglineComponent implements OnInit {
-@Input() infotech:any;
+@Input() infotech:Whytegline[]=[];
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Frontend } from '../common';
 
 @Component({
   selector: 'app-frontend',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./frontend.component.scss']
 })
 export class FrontendComponent implements OnInit {
-@Input() flang:any;
+@Input() flang:Frontend []=[];
   constructor() { }
 
   ngOnInit(): void {

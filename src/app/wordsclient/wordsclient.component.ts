@@ -1,10 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Wordsdata } from '../common';
 
-interface Wordsdata{
-  clienteletitle: string;
-  clienteledescription1: string;
-  clienteledescription2: string;
-}
+
 @Component({
   selector: 'app-wordsclient',
   templateUrl: './wordsclient.component.html',

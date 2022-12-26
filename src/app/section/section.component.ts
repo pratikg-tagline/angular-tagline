@@ -1,17 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Section } from '../common';
 
 
-interface Section{
-  maintitle:string;
-  starting:string;
-  firstp:
-   string;
-  clientimg:string;
-  OurServices:string;
-  rightforyou:string;
-  Findthe:string;
 
-}
 @Component({
   selector: 'app-section',
   templateUrl: './section.component.html',

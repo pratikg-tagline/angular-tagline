@@ -1,13 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Hr } from '../common';
 
-interface Hr{
-  footerhrhadding: string;
-  footeremail: string;
-  footerhrnum: string;
-  footersaleshadding: string;
-  footersalesemail: string;
-  footersalesname: string;
-}
+
 @Component({
   selector: 'app-footerhr',
   templateUrl: './footerhr.component.html',

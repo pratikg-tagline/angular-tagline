@@ -1,14 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Navbar } from '../common';
 
-interface Navbar {
-    caseStudy: string;
-    aboutus: string;
-    hiredevloper: string;
-    technology: string;
-    industry: string;
-    // mainlogo: string;
-    // button: string;
-  }
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',

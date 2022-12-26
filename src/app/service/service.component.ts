@@ -1,12 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { OurServices } from '../common';
 
-interface OurServices{
-     madimg: string;
-     madtitle: string;
-     maddescription: string;
-     learnmore: string;
-    
-}
+
+
 
 @Component({
   selector: 'app-service',
@@ -14,7 +10,7 @@ interface OurServices{
   styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent implements OnInit {
-@Input() inputData:any
+@Input() inputData:OurServices[]=[];
 
   constructor() { }
 

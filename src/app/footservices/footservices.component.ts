@@ -1,13 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Services } from '../common';
 
-interface Services{
-  footerservices: string;
-  footermobile: string;
-  footerdevelopment: string;
-  footerdesign: string;
-  footerui: string;
-  footerdigitalmarketing: string;
-}
+
 @Component({
   selector: 'app-footservices',
   templateUrl: './footservices.component.html',
