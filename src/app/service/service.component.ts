@@ -5,6 +5,7 @@ interface OurServices{
      madtitle: string;
      maddescription: string;
      learnmore: string;
+    
 }
 
 @Component({

@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface lang
-  {
-  img: string,
-  heading: string
-}
+import { lang } from '../common';
+// interface lang
+//   {
+//   img: string,
+//   heading: string
+// }
 @Component({
   selector: 'app-backend',
   templateUrl: './backend.component.html',

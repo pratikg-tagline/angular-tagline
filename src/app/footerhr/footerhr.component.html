@@ -1,0 +1,22 @@
+<div class="footer">
+ <div class="firstfooter">
+    <div class="division" *ngFor="let hrdata of footerhr ">
+        <div>
+            <div class="hr">
+                <h3>{{hrdata.footerhrhadding}}</h3>
+                <ul>
+                    <li><a href=""><i class="bi bi-telephone-fill"></i> {{hrdata.footeremail}}</a></li>
+                    <li><a href=""><i class="bi bi-envelope-fill"></i>{{hrdata.footerhrnum}}</a></li>
+                </ul>
+            </div>
+            <div class="sales">
+                <h3>{{hrdata.footersaleshadding}}</h3>
+                <ul>
+                    <li><a href=""> {{hrdata.footersalesemail}}</a></li>
+                    <li><a href=""> {{hrdata.footersalesname}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>

@@ -1,21 +1,22 @@
 .reviews{
-    display: flex;
+   // display: flex;
     justify-content: space-around;
     margin-top: 70px;
-   // width: 50%;
+    width: 50%;
 }
 // .flex{
 //     display: flex;
 // }
+
 .reviews .reviewword{
-    max-width: 25%; 
-    margin-left: 140px;
+    width: 50%;
+    margin-left: 240px;
 
 }
 
 .reviews .reviewword h1{
     font-weight: 600;
-    font-size: 31px;
+    font-size: 41px;
     color: #242424;
     letter-spacing: 1px;
     line-height: 40px;
@@ -32,13 +33,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* max-width: 63%; */
+    // max-width: 63%; 
 }
 
 .reviews .reviewsboxes .revbox{
     box-shadow: 0 3px 8px rgb(0 0 0 / 8%);
     margin: 12px;
-    max-width: 25%;
+    //max-width: 25%;
 }
 
 .reviews .reviewsboxes .revbox p{

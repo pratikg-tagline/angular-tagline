@@ -33,17 +33,17 @@ import { Component } from '@angular/core';
 //   softwarwcompanydescription: string;
 //   learnmore: string;
 // }
-interface Section{
-  maintitle:string;
-  starting:string;
-  firstp:
-   string;
-  clientimg:string;
-  OurServices:string;
-  rightforyou:string;
-  Findthe:string;
+// interface Section{
+//   maintitle:string;
+//   starting:string;
+//   firstp:
+//    string;
+//   clientimg:string;
+//   OurServices:string;
+//   rightforyou:string;
+//   Findthe:string;
 
-}
+// }
 interface Experience {
   experiencetitle: string;
   experiencedescription: string;
@@ -234,45 +234,45 @@ interface Experiences {
   image: string;
 }
 
-interface Footer {
-  footerheading: string;
-  footerdesc1: string;
-  footerdesc2: string;
-  footerdesc3: string;
-  footerdesc4: string;
-  footerbtn: string;
-  footerdes: string;
-  footerhrhadding: string;
-  footeremail: string;
-  footerhrnum: string;
-  footersaleshadding: string;
-  footersalesemail: string;
-  footersalesname: string;
-  footerhelp: string;
-  footercareer: string;
-  footeraboutus: string;
-  footercontact: string;
-  footerblog: string;
-  footerprivacy: string;
-  footersitemap: string;
-  footerservices: string;
-  footermobile: string;
-  footerdevelopment: string;
-  footerdesign: string;
-  footerui: string;
-  footerdigitalmarketing: string;
-  footerhiredevelopers: string;
-  footerpython: string;
-  footerangular: string;
-  footerror: string;
-  footerflutter: string;
-  footerreact: string;
-  footerreactnative: string;
-  footerfollow: string;
-  footer2022: string;
-  footerreserved: string;
-  footercompanyname: string;
-}
+// interface Footer {
+//   footerheading: string;
+//   footerdesc1: string;
+//   footerdesc2: string;
+//   footerdesc3: string;
+//   footerdesc4: string;
+//   footerbtn: string;
+//   footerdes: string;
+//   footerhrhadding: string;
+//   footeremail: string;
+//   footerhrnum: string;
+//   footersaleshadding: string;
+//   footersalesemail: string;
+//   footersalesname: string;
+//   footerhelp: string;
+//   footercareer: string;
+//   footeraboutus: string;
+//   footercontact: string;
+//   footerblog: string;
+//   footerprivacy: string;
+//   footersitemap: string;
+//   footerservices: string;
+//   footermobile: string;
+//   footerdevelopment: string;
+//   footerdesign: string;
+//   footerui: string;
+//   footerdigitalmarketing: string;
+//   footerhiredevelopers: string;
+//   footerpython: string;
+//   footerangular: string;
+//   footerror: string;
+//   footerflutter: string;
+//   footerreact: string;
+//   footerreactnative: string;
+//   footerfollow: string;
+//   footer2022: string;
+//   footerreserved: string;
+//   footercompanyname: string;
+// }
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -283,9 +283,10 @@ export class AppComponent {
 
   lable= ['casestady','aboutus','aboutus','technology','industry']
    
-    // mainlogo: '../assets/../assets/images/tagline.png',
+    
     // button: 'button',
-  section:Section={
+  section={
+    mainlogo: '../assets/../assets/images/tagline.png',
     maintitle:'Software Development Company & IT Consultancy',
     starting:'Serving Start-UPs To Fortune 500 ',
     firstp:
@@ -505,6 +506,14 @@ export class AppComponent {
   //    description2:
   //      'We are'
   // }
+
+  words={
+    clienteletitle: 'Words From Our Clientele',
+      clienteledescription1:
+        'Good things come for those who work hard, and thats why our clientele appreciate our efforts. Tagline Infotech provides the best services to its clients, and it is reflected through our ratings and reviewson various platforms.',
+      clienteledescription2:
+      'We are a well-known IT services company on Clutch. Check out what our customers have to say about ourservices. Read their ratings, feedback, and stories about partnering with us before making your own decision.',
+  }
   clientele = [
     {
       // clienteletitle: 'Words From Our Clientele',
@@ -582,6 +591,8 @@ description:
       'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
 read: 'Read More ->',
   }];
+
+
   globalpresence = [{
     heading: 'India (HQ)',
     description:
@@ -597,47 +608,55 @@ read: 'Read More ->',
     num: '+44 78240 75400',
     //read: 'solutions@taglineinfotech.com',
   }];
+
   forms: Forms = {
     formsheading: 'Get Your Free Quote Today',
     formbtn: 'Send Message',
   };
-  footer: Footer = {
+
+
+  footers= {
     footerheading: 'Get latest from Tagline Infotech',
     footerdesc1: 'Share your email so we can send you',
     footerdesc2: 'guides',
     footerdesc3: 'and',
     footerdesc4: 'industry news.',
     footerbtn: 'Subscribe',
-    footerdes: 'You can unsubscribe at any time. Read our privacy policy.',
-    footerhrhadding: 'HR Inquiry',
+    footerdes: 'You can unsubscribe at any time. Read our privacy policy.',}
+    
+    hr=[{footerhrhadding: 'HR Inquiry',
     footeremail: 'hr@taglineinfotech.com',
     footerhrnum: '+91 6354362521',
     footersaleshadding: 'Sales Inquiry',
     footersalesemail: 'solutions@taglineinfotech.com',
-    footersalesname: ' Tagline infotech',
-    footerhelp: 'Help & Advice',
+    footersalesname: ' Tagline infotech',}]
+
+    help=[{footerhelp: 'Help & Advice',
     footercareer: 'Career',
     footeraboutus: 'About Us',
     footercontact: 'Contact Us',
     footerblog: 'Blog',
     footerprivacy: 'Privacy pilicy',
-    footersitemap: 'Sitemap',
-    footerservices: 'Services',
+    footersitemap: 'Sitemap',}]
+
+    services=[{footerservices: 'Services',
     footermobile: 'Mobile',
     footerdevelopment: 'web Development',
     footerdesign: 'Web Design',
     footerui: 'UI / UX Design',
-    footerdigitalmarketing: 'Digital Marketing',
-    footerhiredevelopers: 'Hire Developers',
+    footerdigitalmarketing: 'Digital Marketing',}]
+
+    hiredevlopers=[{footerhiredevelopers: 'Hire Developers',
     footerpython: 'Hire Python Developer',
     footerangular: 'Hire Angular Developer',
     footerror: 'Hire ROR Developer',
     footerflutter: 'Hire Flutter Developer',
     footerreact: 'Hire React Js Developer',
-    footerreactnative: 'Hire React Native Developer',
-    footerfollow: 'Follow Us',
+    footerreactnative: 'Hire React Native Developer',}]
+
+    lastline=[{footerfollow: 'Follow Us',
     footer2022: '2022',
     footerreserved: 'All rights reserved by',
-    footercompanyname: 'Tagline Infotech LLP',
+    footercompanyname: 'Tagline Infotech LLP',}]
   };
-}
+

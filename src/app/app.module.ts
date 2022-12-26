@@ -15,6 +15,12 @@ import { OurglobalComponent } from './ourglobal/ourglobal.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SectionComponent } from './section/section.component';
+import { FooterhrComponent } from './footerhr/footerhr.component';
+import { FootehelpComponent } from './footehelp/footehelp.component';
+import { FootservicesComponent } from './footservices/footservices.component';
+import { FoothiredevlopersComponent } from './foothiredevlopers/foothiredevlopers.component';
+import { FootlastlineComponent } from './footlastline/footlastline.component';
+import { WordsclientComponent } from './wordsclient/wordsclient.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,13 @@ import { SectionComponent } from './section/section.component';
     OurglobalComponent,
     FooterComponent,
     NavbarComponent,
-    SectionComponent
+    SectionComponent,
+    FooterhrComponent,
+    FootehelpComponent,
+    FootservicesComponent,
+    FoothiredevlopersComponent,
+    FootlastlineComponent,
+    WordsclientComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,8 @@
-
-
-    <div class="topbar">
-             <app-navbar [header]="lable"></app-navbar>
-             <app-section [mainpart]="section"></app-section>
-    </div>
-      <!-- <div class="header">
+<div class="topbar">
+  <app-navbar [header]="lable"></app-navbar>
+  <app-section [mainpart]="section"></app-section>
+</div>
+<!-- <div class="header">
 
           <nav>
               <ul>
@@ -41,7 +39,7 @@
           </nav>
       </div> -->
 
-      <!-- <div class="headtext">
+<!-- <div class="headtext">
           <h1>{{ maintitle}}</h1>
           <h1>{{starting}}</h1>
           <p>{{firstp}}</p>
@@ -50,12 +48,11 @@
       </div>
   </div> -->
 
-  <!-- ___________________________________________________________ -->
+<!-- ___________________________________________________________ -->
 
+<app-service [inputData]="users"></app-service>
 
-  <app-service [inputData]="users"></app-service>
-       
-           <!-- <div >
+<!-- <div >
               <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{Findthe}}<br><span
              style="font-weight: bolder; font-size: 60px;">{{rightforyou}}</span><br></h1>
           </div>
@@ -64,14 +61,14 @@
               <app-service [inputData]="users"></app-service>
             </div>
           </div>  -->
-        <!-- <div class="boxes">
+<!-- <div class="boxes">
             <div class="divcontent" style="border: none;">
                 <div class="flex">
                     <app-service [inputData]="users"></app-service>
                 </div>        
             </div>
         </div> -->
-           <!-- <div class="divcontent divcontent2"  *ngFor="let service of users">
+<!-- <div class="divcontent divcontent2"  *ngFor="let service of users">
               <div class="flex">
                   <img src={{service.img}}>
                   <h2>{{service.title}}</h2>
@@ -80,21 +77,10 @@
               <a href="#">{{service.learnmore}}</a>
           </div>  -->
 
-         
+<!-- ___________________________________________________________ -->
+<!-- <div class="experience"> -->
 
-         
-
-         
-
-      
-      
-        
-    
-
-  <!-- ___________________________________________________________ -->
-  <!-- <div class="experience"> -->
-
-      <!-- <div class="contentexp">
+<!-- <div class="contentexp">
           <h2>{{experience.experiencetitle}}</h2>
           <p>{{experience.experiencedescription}}</p>
           <button>Contact Us</button>
@@ -104,9 +90,8 @@
           <img src={{experience.experienceimg}} height="490">
       </span> -->
 
-
-      <app-experience [project]="exper"></app-experience>
-      <!-- <div class="numberexp" >
+<app-experience [project]="exper"></app-experience>
+<!-- <div class="numberexp" >
 
           <div class="fulldiv1" class="fulldiv2" >
               <div class="div1" class="div2" class="div3"  class="div4" *ngFor="let servicelist of exper">
@@ -117,30 +102,31 @@
               
           </div>
     </div> -->
-  <!-- </div> -->
-  
+<!-- </div> -->
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-  <h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{ourtechnologies}}</h1>
-  <span class="headerline"></span>
-  <div class="row">
-      <div class="menu">
-          <ul  >
-            <div >
-                <app-technology [ourtechnology]=" technologies"></app-technology>
-              <!-- <li class="active" *ngFor="let technologie of technologies" ><a href="">{{technologie}}</a></li>
+<h1 style="text-align: center; margin: 40px; font-size: 2rem; margin-bottom: 0">
+  {{ ourtechnologies }}
+</h1>
+<span class="headerline"></span>
+<div class="row">
+  <div class="menu">
+    <ul>
+      <div>
+        <app-technology [ourtechnology]="technologies"></app-technology>
+        <!-- <li class="active" *ngFor="let technologie of technologies" ><a href="">{{technologie}}</a></li>
               -->
-            </div>
-          </ul>
       </div>
-      <div class="language">
-          <div class="web">
-              <h1>{{web}}</h1>
-              <h2 style="margin-top: 20px;font-weight: 400;">{{backendname}}</h2>
-              <div class="backend">
-                 <app-backend [backend]="language"></app-backend>
-                  <!-- <div class="ror">
+    </ul>
+  </div>
+  <div class="language">
+    <div class="web">
+      <h1>{{ web }}</h1>
+      <h2 style="margin-top: 20px; font-weight: 400">{{ backendname }}</h2>
+      <div class="backend">
+        <app-backend [backend]="language"></app-backend>
+        <!-- <div class="ror">
                       <img src={{backend.rubiimg}}>
                       <h3>{{backend.rubiheading}}</h3>
                   </div>
@@ -164,13 +150,12 @@
                       <img src={{backend.golanguageimg}}>
                       <h3>{{backend.golanguageheading}}</h3>
                   </div> -->
+      </div>
 
-              </div>
-
-              <h2>Front End</h2>
-              <div class="frontend">
-                <app-frontend [flang]="frontend"></app-frontend>
-                  <!-- <div class="react">
+      <h2>Front End</h2>
+      <div class="frontend">
+        <app-frontend [flang]="frontend"></app-frontend>
+        <!-- <div class="react">
                       <img src={{frontend.reactimg}}>
                       <h3>{{frontend.reactheading}}</h3>
                   </div>
@@ -198,29 +183,27 @@
                       <img src={{frontend.htmlimg}}>
                       <h3>{{frontend.htmlheading}}</h3>
                   </div> -->
-              </div>
-          </div>
       </div>
+    </div>
   </div>
+</div>
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-
-  <!-- <h1 class="taglinewhyhead">{{whytegline.teglinetitle}}</h1>
+<!-- <h1 class="taglinewhyhead">{{whytegline.teglinetitle}}</h1>
   <span class="headerline"></span>
   <p class="taglinewhyp">{{whytegline.teglinedescription}}</p> -->
-  <div class="empowers">
-      <div class="empowerbox">
-        <app-why-tegline [infotech]="whytegline"></app-why-tegline>
-          <div class="imgnumflex">
-            
-               <!-- <img src={{whytegline.progressiveimg}}>
+<div class="empowers">
+  <div class="empowerbox">
+    <app-why-tegline [infotech]="whytegline"></app-why-tegline>
+    <div class="imgnumflex">
+      <!-- <img src={{whytegline.progressiveimg}}>
               <h1>{{whytegline.progressiveheading}}</h1> -->
-          </div>
-          <!-- <h2>{{whytegline.progressivetitle}}</h2>
+    </div>
+    <!-- <h2>{{whytegline.progressivetitle}}</h2>
           <p>{{whytegline.progressivedescription}}</p> -->
-      </div>
-      <!-- <div class="empowerbox">
+  </div>
+  <!-- <div class="empowerbox">
           <div class="imgnumflex">
               <img src={{whytegline.projectmanagementimg}}>
               <h1>{{whytegline.projectmanagementheading}}</h1>
@@ -252,20 +235,22 @@
           <h2>{{whytegline.consistentdeliverytitle}}</h2>
           <p>{{whytegline.consistentdeliverydescription}}</p>
       </div> -->
-      <!-- <div class="empowerbox lastempowerbox">
+  <!-- <div class="empowerbox lastempowerbox">
           <h1><span>{{whytegline.empower}}</span>{{whytegline.your}} <span>{{whytegline.business}}</span> {{whytegline.withdedicateddevelopers}}</h1>
           <button>{{whytegline.button}}</button>
       </div> -->
-  </div>
-  
+</div>
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-  <div class="reviews">
+<div class="reviews">
+  <div class="flex" style="display: flex;">
     <!-- <app-review [words]="wordsclient"></app-review> -->
+    <app-wordsclient [wordsData]="words"></app-wordsclient>
     <app-review [review]="clientele"></app-review>
   </div>
-      <!-- <div class="reviewword">
+</div>
+<!-- <div class="reviewword">
            <h1>{{clientele.clienteletitle}}</h1>
           <span class="headerline"></span>
           <p>{{clientele.clienteledescription1}}</p>
@@ -403,30 +388,31 @@
 
   </div> -->
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-
-  <div class="awards">
-      <!-- <div class="awardhead"> -->
-      <h1>{{awards.awardstitle1}} <br> {{awards.awardstitle2}}</h1>
-      <!-- </div> -->
-      <div class="awardimage">
-          <img src={{awards.awardsimg1}} height="160" width="160">
-          <img src={{awards.awardsimg2}} height="160" width="160">
-          <img src={{awards.awardsimg3}} height="160" width="160">
-          <img src={{awards.awardsimg4}} height="160" width="160">
-          <img src={{awards.awardsimg5}} height="160" width="160">
-      </div>
-
+<div class="awards">
+  <!-- <div class="awardhead"> -->
+  <h1>
+    {{ awards.awardstitle1 }} <br />
+    {{ awards.awardstitle2 }}
+  </h1>
+  <!-- </div> -->
+  <div class="awardimage">
+    <img src="{{ awards.awardsimg1 }}" height="160" width="160" />
+    <img src="{{ awards.awardsimg2 }}" height="160" width="160" />
+    <img src="{{ awards.awardsimg3 }}" height="160" width="160" />
+    <img src="{{ awards.awardsimg4 }}" height="160" width="160" />
+    <img src="{{ awards.awardsimg5 }}" height="160" width="160" />
   </div>
+</div>
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-  <div class="blogs">
-      <!-- <h1>{{ourblogs.blogshadding}}</h1> -->
-      <app-ourblogs [blogs]="ourblogs"></app-ourblogs>
-  </div>
-      <!-- <span class="headerline"></span>
+<div class="blogs">
+  <!-- <h1>{{ourblogs.blogshadding}}</h1> -->
+  <app-ourblogs [blogs]="ourblogs"></app-ourblogs>
+</div>
+<!-- <span class="headerline"></span>
       <div class="bloggers">
           <div class="blog">
               <img src={{ourblogs.pythonimg}}>
@@ -461,20 +447,16 @@
       </div>
   </div> -->
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-  <div class="contactus">
-      <div class="formdetail">
-        
-          <div class="address">
-     
-              <!-- <h4>{{mainblogsname}}</h4> -->
-             
-
-          </div>
-      </div>
-      <app-ourglobal [ourglobal]=" globalpresence"></app-ourglobal>
-      <!-- <div class="forms">
+<div class="contactus">
+  <div class="formdetail">
+    <div class="address">
+      <!-- <h4>{{mainblogsname}}</h4> -->
+    </div>
+  </div>
+  <app-ourglobal [ourglobal]="globalpresence"></app-ourglobal>
+  <!-- <div class="forms">
           <h1>{{forms.formsheading}}</h1>
           <input type="text" placeholder="Full Name"><br>
           <input type="text" placeholder="Phone"><br>
@@ -482,12 +464,21 @@
           <textarea placeholder="Message" rows="3"></textarea><br>
           <button>{{forms.formbtn}}</button>
       </div> -->
-  </div>
+</div>
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-  <div class="footer">
-      <div class="firstfooter">
+<div class="footer">
+  <app-footer [footer]="footers"></app-footer>
+  <app-footerhr [footerhr]="hr"></app-footerhr>
+  <app-footehelp [footerhelp]="help"></app-footehelp>
+  <app-footservices [footerservices]="services"></app-footservices>
+  <app-foothiredevlopers
+    [footerdevloper]="hiredevlopers"
+  ></app-foothiredevlopers>
+  <app-footlastline [footerlastline]="lastline"></app-footlastline>
+
+  <!-- <div class="firstfooter">
           <div class="cont1">
               <h3>{{footer.footerheading}}</h3>
               <p>{{footer.footerdesc1}} <span style="color:#d66f37">{{footer.footerdesc2}}</span>{{footer.footerdesc3}}<span
@@ -563,6 +554,6 @@
               </a></div>
           <p>© <span style="color:#d66f37">{{footer.footer2022}}</span> {{footer.footerreserved}} <a href=""
                   style="text-decoration: none;color:#d66f37">{{footer.footercompanyname}}</a></p>
-      </div>
-  </div>
-  <router-outlet></router-outlet>
+      </div> -->
+</div>
+<router-outlet></router-outlet>
