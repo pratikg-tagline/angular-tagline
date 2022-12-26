@@ -112,3 +112,13 @@ export interface lang
     heading: string;
     description: string;
     }
+
+    export  interface Recognitions{
+      awardstitle1: string;
+        awardstitle2: string;
+        awardsimg1: string;
+        awardsimg2: string;
+        awardsimg3: string;
+        awardsimg4: string;
+        awardsimg5: string;
+    }

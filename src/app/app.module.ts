@@ -21,6 +21,7 @@ import { FootservicesComponent } from './footservices/footservices.component';
 import { FoothiredevlopersComponent } from './foothiredevlopers/foothiredevlopers.component';
 import { FootlastlineComponent } from './footlastline/footlastline.component';
 import { WordsclientComponent } from './wordsclient/wordsclient.component';
+import { AwardsComponent } from './awards/awards.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { WordsclientComponent } from './wordsclient/wordsclient.component';
     FootservicesComponent,
     FoothiredevlopersComponent,
     FootlastlineComponent,
-    WordsclientComponent
+    WordsclientComponent,
+    AwardsComponent
   ],
   imports: [
     BrowserModule,

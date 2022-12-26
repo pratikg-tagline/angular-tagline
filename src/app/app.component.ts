@@ -557,7 +557,7 @@ export class AppComponent {
       review: 'Verified Review',
     },
   ];
-  awards: Awards = {
+  awards = {
     awardstitle1: 'Awards &',
     awardstitle2: ' Recognitions',
     awardsimg1: '../assets/images/award-2.webp',
