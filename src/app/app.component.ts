@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
-interface Lable {
-  CaseStudy: string;
-  Aboutus: string;
-  Hiredevloper: string;
-  Technology: string;
-  Industry: string;
-  mainlogo: string;
-  button: string;
-}
+// interface Lable {
+//   CaseStudy: string;
+//   Aboutus: string;
+//   Hiredevloper: string;
+//   Technology: string;
+//   Industry: string;
+//   mainlogo: string;
+//   button: string;
+// }
 // interface Amd {
 //   madimg: string;
 //   madtitle: string;
@@ -33,7 +33,17 @@ interface Lable {
 //   softwarwcompanydescription: string;
 //   learnmore: string;
 // }
+interface Section{
+  maintitle:string;
+  starting:string;
+  firstp:
+   string;
+  clientimg:string;
+  OurServices:string;
+  rightforyou:string;
+  Findthe:string;
 
+}
 interface Experience {
   experiencetitle: string;
   experiencedescription: string;
@@ -271,24 +281,22 @@ interface Footer {
 export class AppComponent {
   title = 'Angular-Tagline';
 
-  lable: Lable = {
-    CaseStudy: 'casestady',
-    Aboutus: 'aboutus',
-    Hiredevloper: 'hiredevloper',
-    Technology: 'technology',
-    Industry: 'industry',
-    mainlogo: '../assets/../assets/images/tagline.png',
-    button: 'button',
-  };
-  maintitle: string = 'Software Development Company & IT Consultancy';
-  starting: string = 'Serving Start-UPs To Fortune 500 ';
-  firstp: string =
-    'With the help of Innovation and Technology, We give you the power to <br> change the world with yourideas.';
-  clientimg: string = '../assets/images/images.png';
-  OurServices: string = 'OurServices';
-  rightforyou: string = 'rightforyou';
-  Findthe: string = 'Findthe';
-
+  lable= ['casestady','aboutus','aboutus','technology','industry']
+   
+    // mainlogo: '../assets/../assets/images/tagline.png',
+    // button: 'button',
+  section:Section={
+    maintitle:'Software Development Company & IT Consultancy',
+    starting:'Serving Start-UPs To Fortune 500 ',
+    firstp:
+      'With the help of Innovation and Technology, We give you the power to <br> change the world with yourideas.',
+    clientimg : '../assets/images/images.png',
+    OurServices: 'OurServices',
+    rightforyou: 'rightforyou',
+    Findthe: 'Findthe',
+  
+  }
+  
   users = [
     {
       img: '../assets/../assets/images/web-design-icon.webp',

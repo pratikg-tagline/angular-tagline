@@ -12,6 +12,9 @@ import { WhyTeglineComponent } from './why-tegline/why-tegline.component';
 import { ReviewComponent } from './review/review.component';
 import { OurblogsComponent } from './ourblogs/ourblogs.component';
 import { OurglobalComponent } from './ourglobal/ourglobal.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { OurglobalComponent } from './ourglobal/ourglobal.component';
     WhyTeglineComponent,
     ReviewComponent,
     OurblogsComponent,
-    OurglobalComponent
+    OurglobalComponent,
+    FooterComponent,
+    NavbarComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
