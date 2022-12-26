@@ -122,3 +122,15 @@ export interface lang
         awardsimg4: string;
         awardsimg5: string;
     }
+    export  interface Clientele{
+      heading: string;
+          desc: string;
+          des: string;
+          review: string
+    }
+    // export interface Experience{
+    //   experiencetitle: string;
+    //   experiencedescription: string;
+    //   button: string;
+    //   experienceimg: string;
+    // }

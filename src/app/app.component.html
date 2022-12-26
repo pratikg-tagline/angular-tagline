@@ -78,8 +78,9 @@
           </div>  -->
 
 <!-- ___________________________________________________________ -->
-<!-- <div class="experience"> -->
-
+<!-- <div class="experience">  
+    <app-experiencedescription [descexperience]="experience"></app-experiencedescription> 
+</div>   -->
 <!-- <div class="contentexp">
           <h2>{{experience.experiencetitle}}</h2>
           <p>{{experience.experiencedescription}}</p>
@@ -89,7 +90,7 @@
       <span>
           <img src={{experience.experienceimg}} height="490">
       </span> -->
-
+<!-- <app-experiencedescription [descexperience]="experience"></app-experiencedescription>  -->
 <app-experience [project]="exper"></app-experience>
 <!-- <div class="numberexp" >
 
@@ -102,7 +103,7 @@
               
           </div>
     </div> -->
-<!-- </div> -->
+ 
 
 <!-- ____________________________________________________________________ -->
 
@@ -457,6 +458,7 @@
     </div>
   </div>
   <app-ourglobal [ourglobal]="globalpresence"></app-ourglobal>
+  <!-- <app-form [ourform]="forms"></app-form> -->
   <!-- <div class="forms">
           <h1>{{forms.formsheading}}</h1>
           <input type="text" placeholder="Full Name"><br>

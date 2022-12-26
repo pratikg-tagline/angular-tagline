@@ -22,6 +22,8 @@ import { FoothiredevlopersComponent } from './foothiredevlopers/foothiredevloper
 import { FootlastlineComponent } from './footlastline/footlastline.component';
 import { WordsclientComponent } from './wordsclient/wordsclient.component';
 import { AwardsComponent } from './awards/awards.component';
+import { ExperiencedescriptionComponent } from './experiencedescription/experiencedescription.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { AwardsComponent } from './awards/awards.component';
     FoothiredevlopersComponent,
     FootlastlineComponent,
     WordsclientComponent,
-    AwardsComponent
+    AwardsComponent,
+    ExperiencedescriptionComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

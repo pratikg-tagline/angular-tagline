@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Clientele } from '../common';
+
 
  
 @Component({
@@ -7,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./review.component.scss']
 })
 export class ReviewComponent implements OnInit {
-@Input() review:any
+@Input() review:Clientele[]=[]
 // @Input() words:any
   constructor() { }
 

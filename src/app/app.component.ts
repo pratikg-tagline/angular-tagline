@@ -339,7 +339,7 @@ export class AppComponent {
   dropline2: string = 'Drop us a line.';
   contactus: string = 'ContactUs';
 
-  experience: Experience = {
+  experience= {
     experiencetitle: 'We have the experience',
     experiencedescription:
       'We have got the experience to make your dream come true, and these stats speak for themselves: we have150+ clients worldwide in only three years, and we have worked on over 200 projects, all of which havebeen finished successfully and on schedule, with 100% client satisfaction. We also have 60K+ hours of freelancing experience',
@@ -516,11 +516,7 @@ export class AppComponent {
   }
   clientele = [
     {
-      // clienteletitle: 'Words From Our Clientele',
-      // clienteledescription1:
-      //   'Good things come for those who work hard, and thats why our clientele appreciate our efforts. Tagline Infotech provides the best services to its clients, and it is reflected through our ratings and reviewson various platforms.',
-      // clienteledescription2:
-      // 'We are a well-known IT services company on Clutch. Check out what our customers have to say about ourservices. Read their ratings, feedback, and stories about partnering with us before making your own decision.',
+  
       heading: '5.0',
       desc: 'Everything always turns out perfectly done.',
       des: 'IT & Computer Scientist, Self-Employed',
@@ -609,7 +605,7 @@ read: 'Read More ->',
     //read: 'solutions@taglineinfotech.com',
   }];
 
-  forms: Forms = {
+  forms = {
     formsheading: 'Get Your Free Quote Today',
     formbtn: 'Send Message',
   };
