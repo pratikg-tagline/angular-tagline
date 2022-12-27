@@ -24,6 +24,7 @@ import { WordsclientComponent } from './wordsclient/wordsclient.component';
 import { AwardsComponent } from './awards/awards.component';
 import { ExperiencedescriptionComponent } from './experiencedescription/experiencedescription.component';
 import { FormComponent } from './form/form.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { FormComponent } from './form/form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

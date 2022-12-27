@@ -1,6 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Form } from '@angular/forms';
+// import { Form } from '@angular/forms';
 
+interface Form{
+  formsheading: string;
+  formbtn: string,
+}
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
