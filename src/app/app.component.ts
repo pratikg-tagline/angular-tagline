@@ -298,80 +298,80 @@ export class AppComponent {
   
   }
   
-  users = [
-    {
-      img: '../assets/../assets/images/web-design-icon.webp',
-      title: 'Software Product Engineering',
-      description:
-        'We are dedicated to providing the best Software product engineering services for your business. Ourteam of developers provides the service of software product engineering and it includes designing,developing, testing, and deploying the software products',
-      learnmore: 'Learn More ->',
-    },
-    {
-      img: '../assets/../assets/images/web-design-icon.webp',
-      title: 'Agile QA, Automation, and DevOps',
-      description:
-        'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA,Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QAensures the quality of the software',
-      learnmore: 'Learn More ->',
-    },
-    {
-      img: '../assets/../assets/images/uiux-design-icon.webp',
-      title: 'Digital Strategy & Design',
-      description:
-        'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of theirbusinesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences',
-      learnmore: 'Learn More ->',
-    },
-    {
-      img: '../assets/../assets/images/software-development-1.png',
-      title: 'Software outsourcing company',
-      description:
-        'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-      learnmore: 'Learn More ->',
-    },
-    {
-      img: '../assets/../assets/images/software-development-1.png',
-      title: 'Software outsourcing company',
-      description:
-        'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-      learnmore: 'Learn More ->',
-    },
-  ];
-  dropline1: string = 'Don not know what to choose?';
-  dropline2: string = 'Drop us a line.';
-  contactus: string = 'ContactUs';
+  // users = [
+  //   {
+  //     img: '../assets/../assets/images/web-design-icon.webp',
+  //     title: 'Software Product Engineering',
+  //     description:
+  //       'We are dedicated to providing the best Software product engineering services for your business. Ourteam of developers provides the service of software product engineering and it includes designing,developing, testing, and deploying the software products',
+  //     learnmore: 'Learn More ->',
+  //   },
+  //   {
+  //     img: '../assets/../assets/images/web-design-icon.webp',
+  //     title: 'Agile QA, Automation, and DevOps',
+  //     description:
+  //       'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA,Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QAensures the quality of the software',
+  //     learnmore: 'Learn More ->',
+  //   },
+  //   {
+  //     img: '../assets/../assets/images/uiux-design-icon.webp',
+  //     title: 'Digital Strategy & Design',
+  //     description:
+  //       'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of theirbusinesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences',
+  //     learnmore: 'Learn More ->',
+  //   },
+  //   {
+  //     img: '../assets/../assets/images/software-development-1.png',
+  //     title: 'Software outsourcing company',
+  //     description:
+  //       'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+  //     learnmore: 'Learn More ->',
+  //   },
+  //   {
+  //     img: '../assets/../assets/images/software-development-1.png',
+  //     title: 'Software outsourcing company',
+  //     description:
+  //       'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+  //     learnmore: 'Learn More ->',
+  //   },
+  // ];
+  // dropline1: string = 'Don not know what to choose?';
+  // dropline2: string = 'Drop us a line.';
+  // contactus: string = 'ContactUs';
 
-  experience= {
-    experiencetitle: 'We have the experience',
-    experiencedescription:
-      'We have got the experience to make your dream come true, and these stats speak for themselves: we have150+ clients worldwide in only three years, and we have worked on over 200 projects, all of which havebeen finished successfully and on schedule, with 100% client satisfaction. We also have 60K+ hours of freelancing experience',
-    button: 'button',
-    experienceimg: '../assets/../assets/images/woman.webp',
-  };
-  exper = [
-    {
-      project: '125+',
-      title: 'Professional',
+  // experience= {
+  //   experiencetitle: 'We have the experience',
+  //   experiencedescription:
+  //     'We have got the experience to make your dream come true, and these stats speak for themselves: we have150+ clients worldwide in only three years, and we have worked on over 200 projects, all of which havebeen finished successfully and on schedule, with 100% client satisfaction. We also have 60K+ hours of freelancing experience',
+  //   button: 'button',
+  //   experienceimg: '../assets/../assets/images/woman.webp',
+  // };
+  // exper = [
+  //   {
+  //     project: '125+',
+  //     title: 'Professional',
 
-      image: '../assets/../assets/images/contentlogo.webp',
-    },
-    {
-      project: '450+',
-      title: 'Completedproject',
+  //     image: '../assets/../assets/images/contentlogo.webp',
+  //   },
+  //   {
+  //     project: '450+',
+  //     title: 'Completedproject',
 
-      image: '../assets/../assets/images/contentlogo2.webp',
-    },
-    {
-      project: '150+',
-      title: 'Freelancehours',
+  //     image: '../assets/../assets/images/contentlogo2.webp',
+  //   },
+  //   {
+  //     project: '150+',
+  //     title: 'Freelancehours',
 
-      image: '../assets/../assets/images/contentlogo3.webp',
-    },
-    {
-      project: '+5',
-      title: 'Yearsofexperience',
+  //     image: '../assets/../assets/images/contentlogo3.webp',
+  //   },
+  //   {
+  //     project: '+5',
+  //     title: 'Yearsofexperience',
 
-      image: '../assets/../assets/images/contentlogo4.webp',
-    },
-  ];
+  //     image: '../assets/../assets/images/contentlogo4.webp',
+  //   },
+  // ];
   ourtechnologies: string = 'Our Technologies';
   // technologies: Technologies = {
   //   web: 'Web',

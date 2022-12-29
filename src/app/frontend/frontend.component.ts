@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FrontendService } from '../allServices/frontend.service';
 import { Frontend } from '../common';
 
 @Component({
@@ -7,10 +8,11 @@ import { Frontend } from '../common';
   styleUrls: ['./frontend.component.scss']
 })
 export class FrontendComponent implements OnInit {
-@Input() flang:Frontend []=[];
-  constructor() { }
+frontend:Frontend []=[];
+  constructor(private  frontendService : FrontendService ) { }
 
   ngOnInit(): void {
+    this.frontend=this.frontendService.frontend
   }
 
 }

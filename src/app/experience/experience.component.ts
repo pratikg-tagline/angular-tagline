@@ -1,4 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+// import { Exper } from '../allServices/all-inter-face';
+//import { AllservicesService } from '../allServices/allservices.service';
+import { Exper } from '../allServices/exper';
+import { ExperService } from '../allServices/exper.service';
 import { Experience } from '../common';
 
 
@@ -9,10 +13,15 @@ import { Experience } from '../common';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
-  @Input() project: Experience[]=[];
-  constructor() { }
+  project: Experience[]=[];
+
+
+experData:Exper[]=[];
+
+  constructor(private  experService : ExperService) { }
 
   ngOnInit(): void {
+     this.project=this.experService.exper;
   }
 
 }

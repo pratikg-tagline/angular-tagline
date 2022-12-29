@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AllservicesService } from '../allServices/allservices.service';
+import { TechnologyService } from '../allServices/technology.service';
 
 @Component({
   selector: 'app-technology',
@@ -6,10 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./technology.component.scss']
 })
 export class TechnologyComponent implements OnInit {
-@Input() ourtechnology:string[]=[];
-  constructor() { }
+ ourtechnology:string[]=[];
 
-  ngOnInit(): void {
-  }
+
+constructor(private  technologyService : TechnologyService ) { }
+
+ngOnInit(): void {
+ this.ourtechnology=this.technologyService.technologies
+}
 
 }

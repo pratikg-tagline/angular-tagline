@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Language } from '../allServices/all-inter-face';
+import { AllservicesService } from '../allServices/allservices.service';
+import { BackendService } from '../allServices/backend.service';
 import { lang } from '../common';
 // interface lang
 //   {
@@ -11,12 +14,16 @@ import { lang } from '../common';
   styleUrls: ['./backend.component.scss']
 })
 export class BackendComponent implements OnInit {
-  @Input()
+ 
   backend!: lang[];
  
-  constructor() { }
+  
+
+  constructor(private  backendService : BackendService ) { }
 
   ngOnInit(): void {
+    this.backend=this.backendService.language
   }
+
 
 }

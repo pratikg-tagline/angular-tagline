@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { WordsclientService } from '../allServices/wordsclient.service';
 import { Wordsdata } from '../common';
 
 
@@ -8,11 +9,12 @@ import { Wordsdata } from '../common';
   styleUrls: ['./wordsclient.component.scss']
 })
 export class WordsclientComponent implements OnInit {
-  @Input()
+ 
   wordsData!: Wordsdata;
-  constructor() { }
+  constructor(private wordsclientService:WordsclientService) { }
 
   ngOnInit(): void {
+    this.wordsData=this.wordsclientService.words
   }
 
 }
