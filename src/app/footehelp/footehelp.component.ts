@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FooterhelpService } from '../allServices/footerhelp.service';
 import { Help } from '../common';
 
 
@@ -8,10 +9,11 @@ import { Help } from '../common';
   styleUrls: ['./footehelp.component.scss']
 })
 export class FootehelpComponent implements OnInit {
-@Input() footerhelp:Help[]=[];
-  constructor() { }
+footerhelp:Help[]=[];
+  constructor(private footerhelpService:FooterhelpService) { }
 
   ngOnInit(): void {
+    this.footerhelp=this.footerhelpService.help
   }
 
 }

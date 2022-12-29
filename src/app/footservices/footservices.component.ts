@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FooterservicesService } from '../allServices/footerservices.service';
 import { Services } from '../common';
 
 
@@ -8,10 +9,11 @@ import { Services } from '../common';
   styleUrls: ['./footservices.component.scss']
 })
 export class FootservicesComponent implements OnInit {
-@Input() footerservices:Services[]=[];
-  constructor() { }
+ footerservices:Services[]=[];
+  constructor(private footerservicesService:FooterservicesService) { }
 
   ngOnInit(): void {
+    this.footerservices=this.footerservicesService.services
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ReviewService } from '../allServices/review.service';
 import { Clientele } from '../common';
 
 
@@ -9,11 +10,12 @@ import { Clientele } from '../common';
   styleUrls: ['./review.component.scss']
 })
 export class ReviewComponent implements OnInit {
-@Input() review:Clientele[]=[]
+ review:Clientele[]=[]
 // @Input() words:any
-  constructor() { }
+  constructor(private reviewService:ReviewService) { }
 
   ngOnInit(): void {
+    this.review=this.reviewService.clientele
   }
 
 }

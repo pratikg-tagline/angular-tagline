@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FooterhiredevloperService } from '../allServices/footerhiredevloper.service';
 import { Developer } from '../common';
 
 
@@ -8,11 +9,12 @@ import { Developer } from '../common';
   styleUrls: ['./foothiredevlopers.component.scss']
 })
 export class FoothiredevlopersComponent implements OnInit {
-@Input() footerdevloper:Developer[]=[];
+ footerdevloper:Developer[]=[];
 
-  constructor() { }
+  constructor(private footerhiredevloperService:FooterhiredevloperService) { }
 
   ngOnInit(): void {
+    this.footerdevloper=this.footerhiredevloperService.hiredevlopers
   }
 
 }

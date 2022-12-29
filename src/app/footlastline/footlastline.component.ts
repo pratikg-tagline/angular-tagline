@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FooterlastlineService } from '../allServices/footerlastline.service';
 import { Lastline } from '../common';
 
 
@@ -8,10 +9,11 @@ import { Lastline } from '../common';
   styleUrls: ['./footlastline.component.scss']
 })
 export class FootlastlineComponent implements OnInit {
-@Input() footerlastline: Lastline[]=[];
-  constructor() { }
+footerlastline: Lastline[]=[];
+  constructor(private footerlastlineService:FooterlastlineService) { }
 
   ngOnInit(): void {
+    this.footerlastline=this.footerlastlineService.lastline
   }
 
 }

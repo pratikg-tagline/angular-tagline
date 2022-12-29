@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MainsectionService } from '../allServices/mainsection.service';
 import { Section } from '../common';
 
 
@@ -9,11 +10,12 @@ import { Section } from '../common';
   styleUrls: ['./section.component.scss']
 })
 export class SectionComponent implements OnInit {
-  @Input()
+  
   mainpart!: Section;
-  constructor() { }
+  constructor(private mainsectionService:MainsectionService) { }
 
   ngOnInit(): void {
+    this.mainpart=this.mainsectionService.section
   }
 
 }

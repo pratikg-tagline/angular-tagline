@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { OurblogsService } from '../allServices/ourblogs.service';
 import { Blogs } from '../common';
 
 
@@ -8,10 +9,11 @@ import { Blogs } from '../common';
   styleUrls: ['./ourblogs.component.scss']
 })
 export class OurblogsComponent implements OnInit {
-@Input() blogs:Blogs[]=[];
-  constructor() { }
+ blogs:Blogs[]=[];
+  constructor(private ourblogsService:OurblogsService) { }
 
   ngOnInit(): void {
+    this.blogs=this.ourblogsService.ourblogs
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { OurglobalService } from '../allServices/ourglobal.service';
 interface Global{
   heading:string,
   description:string,
@@ -10,10 +11,11 @@ interface Global{
   styleUrls: ['./ourglobal.component.scss']
 })
 export class OurglobalComponent implements OnInit {
-@Input() ourglobal:Global[]=[];
-  constructor() { }
+ ourglobal:Global[]=[];
+  constructor(private ourglobalService:OurglobalService) { }
 
   ngOnInit(): void {
+    this.ourglobal=this.ourglobalService.globalpresence
   }
 
 }

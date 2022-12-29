@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NavbarService } from '../allServices/navbar.service';
 import { Navbar } from '../common';
 
 
@@ -8,14 +9,15 @@ import { Navbar } from '../common';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-@Input() header:any;
+ header:string[] | undefined;
 btn:string="button"
 getquote:string="GetGuote"
 teglinelogo:string="../assets/../assets/images/tagline.png"
 
-  constructor() { }
+  constructor(private navbarService:NavbarService) { }
 
   ngOnInit(): void {
+    this.header=this.navbarService.lable
   }
 
 }

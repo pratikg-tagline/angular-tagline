@@ -3,11 +3,7 @@ import { Language } from '../allServices/all-inter-face';
 import { AllservicesService } from '../allServices/allservices.service';
 import { BackendService } from '../allServices/backend.service';
 import { lang } from '../common';
-// interface lang
-//   {
-//   img: string,
-//   heading: string
-// }
+
 @Component({
   selector: 'app-backend',
   templateUrl: './backend.component.html',

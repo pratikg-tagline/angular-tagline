@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AwardsService } from '../allServices/awards.service';
 import { Recognitions } from '../common';
 
 
@@ -8,11 +9,12 @@ import { Recognitions } from '../common';
   styleUrls: ['./awards.component.scss']
 })
 export class AwardsComponent implements OnInit {
-  @Input()
+ 
   recognition!: Recognitions;
-  constructor() { }
+  constructor(private awardsService:AwardsService) { }
 
   ngOnInit(): void {
+    this.recognition=this.awardsService.awards
   }
 
 }

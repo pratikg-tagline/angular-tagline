@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FooterhrService } from '../allServices/footerhr.service';
 import { Hr } from '../common';
 
 
@@ -8,10 +9,11 @@ import { Hr } from '../common';
   styleUrls: ['./footerhr.component.scss']
 })
 export class FooterhrComponent implements OnInit {
-@Input() footerhr:Hr[]=[];
-  constructor() { }
+ footerhr:Hr[]=[];
+  constructor(private footerhrService:FooterhrService) { }
 
   ngOnInit(): void {
+    this.footerhr=this.footerhrService.hr
   }
 
 }
